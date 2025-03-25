@@ -160,3 +160,63 @@ footer {
   padding-top: 20px;
   border-top: 1px solid #eee;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.logo-item {
+  background: #f7f7f7;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.logo-item img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Gradient Background Section */
+.gradient-section {
+  background: linear-gradient(135deg, #0e6ba8, #0b3c5d);
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.dark-mode .gradient-section {
+  background: linear-gradient(135deg, #1b1b1b, #333333);
+  color: #fff;
+}
+
+.gradient-section h2,
+.gradient-section p {
+  color: #fff;
+}
+
+.experience-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience-list li {
+  background: #f7f7f7;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-weight: 500;
